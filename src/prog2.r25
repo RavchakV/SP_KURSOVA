@@ -1,0 +1,57 @@
+/*Prog2*/
+mainprogram 
+start
+data integer32 _Aaaaaaa,_Bbbbbbb,_Ccccccc;
+input _Aaaaaaa;
+input _Bbbbbbb;
+input _Ccccccc;
+if(_Aaaaaaa ge _Bbbbbbb)
+start
+	if(_Aaaaaaa ge _Ccccccc)
+	start
+		goto Abigger;		
+	end
+	else
+	start
+		output _Ccccccc;
+		goto Outofif;
+		Abigger:		
+		output _Aaaaaaa;
+		goto Outofif;
+	end
+end	
+if(_Bbbbbbb le _Ccccccc)
+start
+	output _Ccccccc;
+end	
+else
+start
+	output _Bbbbbbb;
+end
+Outofif:	
+
+if((_Aaaaaaa eq _Bbbbbbb) && (_Aaaaaaa eq _Ccccccc) && (_Bbbbbbb eq _Ccccccc))
+start
+	output 1;
+end	
+else
+start
+	output 0;
+end
+if((_Aaaaaaa le 0) || (_Bbbbbbb le 0) || (_Ccccccc le 0))
+start
+	output -1;
+end	
+else
+start
+	output 0;
+end
+if(!!(_Aaaaaaa le (_Bbbbbbb + _Ccccccc)))
+start
+	output(10);
+end	
+else
+start
+	output(0);
+end
+end

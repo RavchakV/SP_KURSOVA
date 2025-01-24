@@ -1,0 +1,17 @@
+/*Prog1*/
+mainprogram 
+start
+data integer32 _Aaaaaaa,_Bbbbbbb,_Xxxxxxx,_Yyyyyyy;
+input _Aaaaaaa;
+input _Bbbbbbb;
+output _Aaaaaaa + _Bbbbbbb;
+output _Aaaaaaa - _Bbbbbbb;
+output _Aaaaaaa * _Bbbbbbb;
+output _Aaaaaaa / _Bbbbbbb;
+output _Aaaaaaa % _Bbbbbbb;
+
+_Xxxxxxx<-(_Aaaaaaa - _Bbbbbbb) * 10 + (_Aaaaaaa + _Bbbbbbb) / 10;
+_Yyyyyyy<-_Xxxxxxx + (_Xxxxxxx % 10);
+output _Xxxxxxx;
+output _Yyyyyyy;
+end

@@ -1,0 +1,19 @@
+|-- program
+|    |-- var
+|    |    |-- _Aaaaaaa
+|    |-- statement
+|    |    |-- input
+|    |    |    |-- _Aaaaaaa
+|    |    |-- while
+|    |    |    |-- ge
+|    |    |    |    |-- _Aaaaaaa
+|    |    |    |    |-- 1
+|    |    |    |-- statement
+|    |    |    |    |-- statement
+|    |    |    |    |    |-- <==
+|    |    |    |    |    |    |-- _Aaaaaaa
+|    |    |    |    |    |    |-- -
+|    |    |    |    |    |    |    |-- _Aaaaaaa
+|    |    |    |    |    |    |    |-- 1
+|    |    |    |    |-- output
+|    |    |    |    |    |-- _Aaaaaaa

@@ -1,0 +1,45 @@
+/*Prog3*/
+mainprogram 
+start
+data integer32 _Aaaaaaa,_Aaaaaa2,_Bbbbbbb,_Xxxxxxx,_Cccccc1,_Cccccc2;
+input _Aaaaaaa;
+input _Bbbbbbb;
+for _Aaaaaa2<-_Aaaaaaa to _Bbbbbbb do
+	output _Aaaaaa2 * _Aaaaaa2;
+
+for _Aaaaaa2<-_Bbbbbbb to _Aaaaaaa do
+	output _Aaaaaa2 * _Aaaaaa2;
+
+_Xxxxxxx<-0;
+_Cccccc1<-0;
+while _Cccccc1 le _Aaaaaaa 
+start
+	_Cccccc2<-0;
+	while _Cccccc2 le _Bbbbbbb
+	start	
+		_Xxxxxxx<-_Xxxxxxx + 1;
+		_Cccccc2<-_Cccccc2 + 1;
+	end
+	end while
+_Cccccc1<-_Cccccc1 + 1;
+end	
+end while
+output _Xxxxxxx;
+
+_Xxxxxxx<-0;
+_Cccccc1<-1;
+repeat
+start
+  _Cccccc2<-1;
+  repeat
+  start
+    _Xxxxxxx<-_Xxxxxxx+1;
+    _Cccccc2<-_Cccccc2+1;
+	end
+  until !!(_Cccccc2 ge _Bbbbbbb)
+  _Cccccc1<-_Cccccc1+1;
+ end
+until !!(_Cccccc1 ge _Aaaaaaa)
+output _Xxxxxxx;
+
+end

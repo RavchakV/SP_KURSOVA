@@ -1,0 +1,24 @@
+mainprogram
+start data integer32 _Aaaaaaa , _Bbbbbbb , _Ccccccc , _Ddddddd , _Fffffff , _Xxxxxxx ;
+  input _Aaaaaaa
+  _Aaaaaaa <- _Aaaaaaa + 1
+  for _Ddddddd <- 0 to 32767 do
+    _Bbbbbbb <- _Aaaaaaa - 1
+    for _Fffffff <- 0 to 32767 do
+      if ( _Bbbbbbb ge 2 ) ; else goto _Rrrrrrr ;
+      _Ccccccc <- _Aaaaaaa
+      for  _Xxxxxxx <- 0 to 32767 do
+        if ( _Ccccccc ge _Bbbbbbb ) ; else goto _Lllllll ;
+        _Ccccccc <- _Ccccccc - _Bbbbbbb
+      ;
+      _Lllllll:
+      if ( _Ccccccc eg 0 ) goto _Rrrrrrr ;
+      _Bbbbbbb <- _Bbbbbbb - 1
+    ;
+    _Rrrrrrr:
+    if ( _Bbbbbbb eg 1 ) goto _Eeeeeee ;
+    _Aaaaaaa <- _Aaaaaaa + 1
+  ;
+  _Eeeeeee:
+  output ( _Aaaaaaa )
+end

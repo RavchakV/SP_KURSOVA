@@ -1,0 +1,8 @@
+mainprogram
+start data integer32 _Aaaaaaa ;
+  input _Aaaaaaa
+  while ( _Aaaaaaa ge 1)
+    _Aaaaaaa <- _Aaaaaaa - 1
+    output (_Aaaaaaa )
+  end while
+end

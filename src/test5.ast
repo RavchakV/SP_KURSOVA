@@ -1,0 +1,18 @@
+|-- program
+|    |-- var
+|    |    |-- _Aaaaaaa
+|    |-- statement
+|    |    |-- input
+|    |    |    |-- _Aaaaaaa
+|    |    |-- repeat-until
+|    |    |    |-- sequence
+|    |    |    |    |-- <==
+|    |    |    |    |    |-- _Aaaaaaa
+|    |    |    |    |    |-- -
+|    |    |    |    |    |    |-- _Aaaaaaa
+|    |    |    |    |    |    |-- 1
+|    |    |    |    |-- output
+|    |    |    |    |    |-- _Aaaaaaa
+|    |    |    |-- ge
+|    |    |    |    |-- _Aaaaaaa
+|    |    |    |    |-- 1
